@@ -9,10 +9,12 @@ public class Game {
 	
 	
 	public boolean setBoard(int x, int y, State setVal) {
-		if (x > SIZE || y > SIZE){
+		if ((x > SIZE || y > SIZE )|| board[x][y] != null){
+			// checks bounds and that there is no value at this board index
 			return false;
 		}
-		
+		board[x][y] = setVal;
+		return true;
 	}
 }
 
