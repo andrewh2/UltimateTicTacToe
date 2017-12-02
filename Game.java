@@ -10,8 +10,9 @@ public class Game {
 	
 	public boolean setBoard(int x, int y, State setVal) {
 		if (x > SIZE || y > SIZE){
-			
+			return false;
 		}
+		
 	}
 }
 
